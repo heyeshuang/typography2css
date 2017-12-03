@@ -3,11 +3,12 @@
 
 var fs = require("fs");
 var Typography = require('typography')
-var customTheme = require('typography-theme-alton')
+// var customTheme = require('typography-theme-alton')
 //or some custom theme:
-// var customTheme = require('./typography-theme-fangsong.js')
+var customTheme = require('./typography-theme-source-han-serif.js')
 var options = customTheme
-var typography = new Typography(options)
+// console.log(options.default)
+var typography = new Typography(options.default)
 
 var css = typography.toString()
 // console.log(css);
